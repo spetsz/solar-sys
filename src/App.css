@@ -1,0 +1,91 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+    position: absolute;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 12px 9px 16px 4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 12px 9px 16px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 12px 9px 16px 4px rgba(0,0,0,0.75);
+}
+
+.planets{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    overflow: hidden;
+    background-color: white;
+    padding: 5px;
+}
+
+.planet{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;   
+}
+
+.planet:hover{
+    background-color: aliceblue;
+}
+
+.planet img{
+    height: 60px;
+}
+
+.card{
+    background-color: white;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-left: 1px solid black;
+    padding-left: 15px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+
+
+.card-header{
+    position: relative;
+    height: 35% !important;
+    width: 400px;
+}
+
+.card-header img{
+    position : absolute;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.card-header h2{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.card-body{
+   height: 50% !important;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.summary{
+    overflow-y: scroll;
+    margin-top: 5px;
+    border-top: 1px solid black;
+}
+
+
